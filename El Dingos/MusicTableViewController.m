@@ -7,6 +7,7 @@
 //
 
 #import "MusicTableViewController.h"
+#import <UIKit/UIView.h>
 
 @interface MusicTableViewController ()
 
@@ -14,71 +15,74 @@
 
 @implementation MusicTableViewController
 
+NSInteger currentlyPlaying = -1;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a"];
     self.tableView.rowHeight = 44;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/TurkeyTime.m4a", [[NSBundle mainBundle] resourcePath]]];
+    NSInteger row = indexPath.row;
     
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:songs[row], [[NSBundle mainBundle] resourcePath]]];
     NSError *error;
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    audioPlayer.numberOfLoops = -1;
+    audioPlayer.numberOfLoops = 1;
     
-    
-//    if (audioPlayer == nil)
-//        NSLog([error description]);
-//    else
-//        [audioPlayer play];
-
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if(currentlyPlaying == row){
+        [audioPlayer stop];
+        [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated: YES];
+        [self updateProgressInd:row toProg:0.01];
+        currentlyPlaying = -1;
+    }
+    else {
+        [self play:nil];
+        [self updateProgressInd:currentlyPlaying toProg:0.01];
+        currentlyPlaying = row;
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)play:(id)sender {
+    [self->audioPlayer play];
+    self->timer = [NSTimer scheduledTimerWithTimeInterval:0.20 target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
 }
 
-#pragma mark - Table view data source
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    // Return the number of sections.
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    // Return the number of rows in the section.
-//    return 5;
-//}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+- (void)updateProgressBar:(NSTimer *)timer {
+    NSTimeInterval playTime = [self->audioPlayer currentTime];
+    NSTimeInterval duration = [self->audioPlayer duration];
+    float progress = playTime/duration;
+    [self updateProgressInd:currentlyPlaying toProg:progress];
 }
-*/
 
-
-//#pragma mark - Navigation
-//// In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//       
-//    if ([[segue identifier] isEqualToString:@"SegueToFbRegister"])
-//    {
-////        RegisterViewController* destination = [segue destinationViewController];
-////        destination.delegate = self;
-////        [[segue destinationViewController].hText setContentOffset: CGPointMake(0, 100)];
-//
-//    }
-//}
-
+- (void)updateProgressInd:(NSInteger)ind toProg:(float) prog {
+    if(!prog) prog = 0.01;
+    switch (ind) {
+        case 0:
+            p0.progress = prog;
+            break;
+            
+        case 1:
+            p1.progress = prog;
+            break;
+            
+        case 2:
+            p2.progress = prog;
+            break;
+            
+        case 3:
+            p3.progress = prog;
+            break;
+            
+        case 4:
+            p4.progress = prog;
+            break;
+            
+        default:
+            break;
+    }
+}
 
 @end

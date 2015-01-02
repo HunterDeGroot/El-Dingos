@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIView.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface MusicTableViewController : UITableViewController {
     AVAudioPlayer *audioPlayer;
+    NSArray *songs;
+    NSTimer *timer;
     IBOutlet UITableView *tableView;
+    __weak IBOutlet UIProgressView *p0;
+    __weak IBOutlet UIProgressView *p1;
+    __weak IBOutlet UIProgressView *p2;
+    __weak IBOutlet UIProgressView *p3;
+    __weak IBOutlet UIProgressView *p4;
 }
+
+- (void) updateProgressInd:(NSInteger)ind toProg:(float) prog;
+- (IBAction)play:(id)sender;
 
 @end

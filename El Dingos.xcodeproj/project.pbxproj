@@ -21,8 +21,14 @@
 		9054ECE41A4524AC004F83DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9054ECE31A4524AC004F83DD /* Images.xcassets */; };
 		9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9054ECE51A4524AC004F83DD /* LaunchScreen.xib */; };
 		9054ECF31A4524AC004F83DD /* El_DingosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECF21A4524AC004F83DD /* El_DingosTests.m */; };
+		907580101A565DCE009E5338 /* home7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 907580091A565DCE009E5338 /* home7.jpg */; };
+		907580111A565DCE009E5338 /* home6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800A1A565DCE009E5338 /* home6.jpg */; };
+		907580121A565DCE009E5338 /* home3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800B1A565DCE009E5338 /* home3.jpg */; };
+		907580131A565DCE009E5338 /* home4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800C1A565DCE009E5338 /* home4.jpg */; };
+		907580141A565DCE009E5338 /* home5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800D1A565DCE009E5338 /* home5.jpg */; };
+		907580151A565DCE009E5338 /* home2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800E1A565DCE009E5338 /* home2.jpg */; };
+		907580161A565DCE009E5338 /* home1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9075800F1A565DCE009E5338 /* home1.jpg */; };
 		9084C3A21A4639A1004BDB2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9084C3A11A4639A1004BDB2E /* AVFoundation.framework */; };
-		9084C3A41A463A5A004BDB2E /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9084C3A31A463A5A004BDB2E /* test.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +64,14 @@
 		9054ECEC1A4524AC004F83DD /* El DingosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El DingosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9054ECF11A4524AC004F83DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9054ECF21A4524AC004F83DD /* El_DingosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = El_DingosTests.m; sourceTree = "<group>"; };
+		907580091A565DCE009E5338 /* home7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home7.jpg; sourceTree = "<group>"; };
+		9075800A1A565DCE009E5338 /* home6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home6.jpg; sourceTree = "<group>"; };
+		9075800B1A565DCE009E5338 /* home3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home3.jpg; sourceTree = "<group>"; };
+		9075800C1A565DCE009E5338 /* home4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home4.jpg; sourceTree = "<group>"; };
+		9075800D1A565DCE009E5338 /* home5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home5.jpg; sourceTree = "<group>"; };
+		9075800E1A565DCE009E5338 /* home2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home2.jpg; sourceTree = "<group>"; };
+		9075800F1A565DCE009E5338 /* home1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home1.jpg; sourceTree = "<group>"; };
 		9084C3A11A4639A1004BDB2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9084C3A31A463A5A004BDB2E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +134,18 @@
 		9054ECD31A4524AC004F83DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				907580091A565DCE009E5338 /* home7.jpg */,
+				9075800A1A565DCE009E5338 /* home6.jpg */,
+				9075800B1A565DCE009E5338 /* home3.jpg */,
+				9075800C1A565DCE009E5338 /* home4.jpg */,
+				9075800D1A565DCE009E5338 /* home5.jpg */,
+				9075800E1A565DCE009E5338 /* home2.jpg */,
+				9075800F1A565DCE009E5338 /* home1.jpg */,
 				9021A4B41A468B21008E2C76 /* nalr.m4a */,
 				9021A4B51A468B21008E2C76 /* jsf.m4a */,
 				9021A4B61A468B21008E2C76 /* chft.m4a */,
 				9021A4B71A468B21008E2C76 /* mrv.m4a */,
 				9021A4B21A468286008E2C76 /* tt.m4a */,
-				9084C3A31A463A5A004BDB2E /* test.mp3 */,
 				9054ECD41A4524AC004F83DD /* Info.plist */,
 				9054ECD51A4524AC004F83DD /* main.m */,
 			);
@@ -237,14 +255,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907580141A565DCE009E5338 /* home5.jpg in Resources */,
 				9021A4B81A468B21008E2C76 /* nalr.m4a in Resources */,
+				907580161A565DCE009E5338 /* home1.jpg in Resources */,
 				9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */,
 				9021A4B31A468286008E2C76 /* tt.m4a in Resources */,
-				9084C3A41A463A5A004BDB2E /* test.mp3 in Resources */,
+				907580151A565DCE009E5338 /* home2.jpg in Resources */,
+				907580121A565DCE009E5338 /* home3.jpg in Resources */,
+				907580111A565DCE009E5338 /* home6.jpg in Resources */,
+				907580101A565DCE009E5338 /* home7.jpg in Resources */,
 				9021A4BA1A468B21008E2C76 /* chft.m4a in Resources */,
 				9021A4BB1A468B21008E2C76 /* mrv.m4a in Resources */,
 				901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */,
 				9054ECE41A4524AC004F83DD /* Images.xcassets in Resources */,
+				907580131A565DCE009E5338 /* home4.jpg in Resources */,
 				9021A4B91A468B21008E2C76 /* jsf.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
