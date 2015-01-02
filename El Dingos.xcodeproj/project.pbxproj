@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901D4FD01A5620CB00FC54F3 /* Main.storyboard */; };
+		9021A4B31A468286008E2C76 /* tt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9021A4B21A468286008E2C76 /* tt.m4a */; };
+		9021A4B81A468B21008E2C76 /* nalr.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9021A4B41A468B21008E2C76 /* nalr.m4a */; };
+		9021A4B91A468B21008E2C76 /* jsf.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9021A4B51A468B21008E2C76 /* jsf.m4a */; };
+		9021A4BA1A468B21008E2C76 /* chft.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9021A4B61A468B21008E2C76 /* chft.m4a */; };
+		9021A4BB1A468B21008E2C76 /* mrv.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9021A4B71A468B21008E2C76 /* mrv.m4a */; };
+		9021A4BE1A468C42008E2C76 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4BD1A468C42008E2C76 /* HomeViewController.m */; };
+		9021A4C11A468C5D008E2C76 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4C01A468C5D008E2C76 /* MusicTableViewController.m */; };
+		9021A4C41A468C7C008E2C76 /* BiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4C31A468C7C008E2C76 /* BiosViewController.m */; };
 		9054ECD61A4524AC004F83DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECD51A4524AC004F83DD /* main.m */; };
 		9054ECD91A4524AC004F83DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECD81A4524AC004F83DD /* AppDelegate.m */; };
-		9054ECDC1A4524AC004F83DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECDB1A4524AC004F83DD /* FirstViewController.m */; };
-		9054ECDF1A4524AC004F83DD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECDE1A4524AC004F83DD /* SecondViewController.m */; };
-		9054ECE21A4524AC004F83DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9054ECE01A4524AC004F83DD /* Main.storyboard */; };
 		9054ECE41A4524AC004F83DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9054ECE31A4524AC004F83DD /* Images.xcassets */; };
 		9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9054ECE51A4524AC004F83DD /* LaunchScreen.xib */; };
 		9054ECF31A4524AC004F83DD /* El_DingosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054ECF21A4524AC004F83DD /* El_DingosTests.m */; };
+		9084C3A21A4639A1004BDB2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9084C3A11A4639A1004BDB2E /* AVFoundation.framework */; };
+		9084C3A41A463A5A004BDB2E /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9084C3A31A463A5A004BDB2E /* test.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901D4FD11A5620CB00FC54F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9021A4B21A468286008E2C76 /* tt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = tt.m4a; path = ../../../Downloads/tt.m4a; sourceTree = "<group>"; };
+		9021A4B41A468B21008E2C76 /* nalr.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nalr.m4a; path = ../../nalr.m4a; sourceTree = "<group>"; };
+		9021A4B51A468B21008E2C76 /* jsf.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = jsf.m4a; path = ../../jsf.m4a; sourceTree = "<group>"; };
+		9021A4B61A468B21008E2C76 /* chft.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = chft.m4a; path = ../../chft.m4a; sourceTree = "<group>"; };
+		9021A4B71A468B21008E2C76 /* mrv.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = mrv.m4a; path = ../../mrv.m4a; sourceTree = "<group>"; };
+		9021A4BC1A468C42008E2C76 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9021A4BD1A468C42008E2C76 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9021A4BF1A468C5D008E2C76 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		9021A4C01A468C5D008E2C76 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+		9021A4C21A468C7C008E2C76 /* BiosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiosViewController.h; sourceTree = "<group>"; };
+		9021A4C31A468C7C008E2C76 /* BiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiosViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		9054ECD01A4524AC004F83DD /* El Dingos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Dingos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9054ECD41A4524AC004F83DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9054ECD51A4524AC004F83DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9054ECD71A4524AC004F83DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9054ECD81A4524AC004F83DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9054ECDA1A4524AC004F83DD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		9054ECDB1A4524AC004F83DD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		9054ECDD1A4524AC004F83DD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		9054ECDE1A4524AC004F83DD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		9054ECE11A4524AC004F83DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9054ECE31A4524AC004F83DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9054ECE61A4524AC004F83DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9054ECEC1A4524AC004F83DD /* El DingosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El DingosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9054ECF11A4524AC004F83DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9054ECF21A4524AC004F83DD /* El_DingosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = El_DingosTests.m; sourceTree = "<group>"; };
+		9084C3A11A4639A1004BDB2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9084C3A31A463A5A004BDB2E /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9084C3A21A4639A1004BDB2E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +84,7 @@
 		9054ECC71A4524AC004F83DD = {
 			isa = PBXGroup;
 			children = (
+				9084C3A11A4639A1004BDB2E /* AVFoundation.framework */,
 				9054ECD21A4524AC004F83DD /* El Dingos */,
 				9054ECEF1A4524AC004F83DD /* El DingosTests */,
 				9054ECD11A4524AC004F83DD /* Products */,
@@ -86,12 +105,14 @@
 			children = (
 				9054ECD71A4524AC004F83DD /* AppDelegate.h */,
 				9054ECD81A4524AC004F83DD /* AppDelegate.m */,
-				9054ECDA1A4524AC004F83DD /* FirstViewController.h */,
-				9054ECDB1A4524AC004F83DD /* FirstViewController.m */,
-				9054ECDD1A4524AC004F83DD /* SecondViewController.h */,
-				9054ECDE1A4524AC004F83DD /* SecondViewController.m */,
-				9054ECE01A4524AC004F83DD /* Main.storyboard */,
+				9021A4BC1A468C42008E2C76 /* HomeViewController.h */,
+				9021A4BD1A468C42008E2C76 /* HomeViewController.m */,
+				9021A4BF1A468C5D008E2C76 /* MusicTableViewController.h */,
+				9021A4C01A468C5D008E2C76 /* MusicTableViewController.m */,
+				9021A4C21A468C7C008E2C76 /* BiosViewController.h */,
+				9021A4C31A468C7C008E2C76 /* BiosViewController.m */,
 				9054ECE31A4524AC004F83DD /* Images.xcassets */,
+				901D4FD01A5620CB00FC54F3 /* Main.storyboard */,
 				9054ECE51A4524AC004F83DD /* LaunchScreen.xib */,
 				9054ECD31A4524AC004F83DD /* Supporting Files */,
 			);
@@ -101,6 +122,12 @@
 		9054ECD31A4524AC004F83DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9021A4B41A468B21008E2C76 /* nalr.m4a */,
+				9021A4B51A468B21008E2C76 /* jsf.m4a */,
+				9021A4B61A468B21008E2C76 /* chft.m4a */,
+				9021A4B71A468B21008E2C76 /* mrv.m4a */,
+				9021A4B21A468286008E2C76 /* tt.m4a */,
+				9084C3A31A463A5A004BDB2E /* test.mp3 */,
 				9054ECD41A4524AC004F83DD /* Info.plist */,
 				9054ECD51A4524AC004F83DD /* main.m */,
 			);
@@ -173,6 +200,12 @@
 				TargetAttributes = {
 					9054ECCF1A4524AC004F83DD = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = J7HYSXY656;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					9054ECEB1A4524AC004F83DD = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -204,9 +237,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9054ECE21A4524AC004F83DD /* Main.storyboard in Resources */,
+				9021A4B81A468B21008E2C76 /* nalr.m4a in Resources */,
 				9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */,
+				9021A4B31A468286008E2C76 /* tt.m4a in Resources */,
+				9084C3A41A463A5A004BDB2E /* test.mp3 in Resources */,
+				9021A4BA1A468B21008E2C76 /* chft.m4a in Resources */,
+				9021A4BB1A468B21008E2C76 /* mrv.m4a in Resources */,
+				901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */,
 				9054ECE41A4524AC004F83DD /* Images.xcassets in Resources */,
+				9021A4B91A468B21008E2C76 /* jsf.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9054ECDF1A4524AC004F83DD /* SecondViewController.m in Sources */,
+				9021A4C41A468C7C008E2C76 /* BiosViewController.m in Sources */,
+				9021A4C11A468C5D008E2C76 /* MusicTableViewController.m in Sources */,
 				9054ECD91A4524AC004F83DD /* AppDelegate.m in Sources */,
-				9054ECDC1A4524AC004F83DD /* FirstViewController.m in Sources */,
+				9021A4BE1A468C42008E2C76 /* HomeViewController.m in Sources */,
 				9054ECD61A4524AC004F83DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,10 +290,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9054ECE01A4524AC004F83DD /* Main.storyboard */ = {
+		901D4FD01A5620CB00FC54F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9054ECE11A4524AC004F83DD /* Base */,
+				901D4FD11A5620CB00FC54F3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -349,9 +389,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "El Dingos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,9 +403,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "El Dingos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +466,7 @@
 				9054ECF81A4524AC004F83DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9054ECF91A4524AC004F83DD /* Build configuration list for PBXNativeTarget "El DingosTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +475,7 @@
 				9054ECFB1A4524AC004F83DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
