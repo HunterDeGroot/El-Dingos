@@ -39,6 +39,7 @@ NSInteger currentlyPlaying = -1;
         currentlyPlaying = -1;
     }
     else {
+        [audioPlayer play];
         [self play:nil];
         [self updateProgressInd:currentlyPlaying toProg:0.01];
         currentlyPlaying = row;
@@ -46,7 +47,6 @@ NSInteger currentlyPlaying = -1;
 }
 
 - (IBAction)play:(id)sender {
-    [self->audioPlayer play];
     self->timer = [NSTimer scheduledTimerWithTimeInterval:0.20 target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
 }
 
@@ -54,6 +54,7 @@ NSInteger currentlyPlaying = -1;
     NSTimeInterval playTime = [self->audioPlayer currentTime];
     NSTimeInterval duration = [self->audioPlayer duration];
     float progress = playTime/duration;
+    if(progress >= 1.0) [audioPlayer stop];
     [self updateProgressInd:currentlyPlaying toProg:progress];
 }
 

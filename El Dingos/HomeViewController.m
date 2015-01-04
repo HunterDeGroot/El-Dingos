@@ -19,20 +19,21 @@
 - (void)viewDidLoad {
     
     imageView.animationImages=[NSArray arrayWithObjects:
-                                            [UIImage imageNamed:@"home1.jpg"],
-                                            [UIImage imageNamed:@"home2.jpg"],
-                                            [UIImage imageNamed:@"home3.jpg"],
-                                            [UIImage imageNamed:@"home4.jpg"],
-                                            [UIImage imageNamed:@"home5.jpg"],
-                                            [UIImage imageNamed:@"home6.jpg"],
-                                            [UIImage imageNamed:@"home7.jpg"], nil];
+                                            [UIImage imageNamed:@"home1"],
+                                            [UIImage imageNamed:@"home2"],
+                                            [UIImage imageNamed:@"home3"],
+                                            [UIImage imageNamed:@"home4"],
+                                            [UIImage imageNamed:@"home5"],
+                                            [UIImage imageNamed:@"home6"],
+                                            [UIImage imageNamed:@"home7"], nil];
     
-    imageView.animationDuration= [imageView.animationImages count] * 10.0;
+    imageView.animationDuration= [imageView.animationImages count] * 5.0;
     imageView.animationRepeatCount=0;
     [imageView startAnimating];
     [self.view addSubview:imageView];
 
-    NSTimer *timer = [NSTimer   timerWithTimeInterval: imageView.animationDuration/ [imageView.animationImages count]
+    float interval = imageView.animationDuration/ [imageView.animationImages count];
+    NSTimer *timer = [NSTimer   timerWithTimeInterval: interval
                                 target:self
                                 selector:@selector(onTimer)
                                 userInfo:nil
