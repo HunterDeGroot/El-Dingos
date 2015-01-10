@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define STATICDATALENGTH 321;
+#define NUMPICS 3;
+
 @interface BiosViewController : UIViewController {
     __weak IBOutlet UITextView *hText;
     __weak IBOutlet UITextView *cText;
@@ -16,7 +19,6 @@
     __weak IBOutlet NSLayoutConstraint *hHeightConstraint;
     __weak IBOutlet NSLayoutConstraint *cHeightConstraint;
     __weak IBOutlet NSLayoutConstraint *gHeightConstraint;
-    __weak IBOutlet NSLayoutConstraint *sHeightConstraint;
     __weak IBOutlet NSLayoutConstraint *viewWidth;
     __weak IBOutlet NSLayoutConstraint *vertSpace;
 }

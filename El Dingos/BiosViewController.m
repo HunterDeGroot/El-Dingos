@@ -15,31 +15,28 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
-    // Calculate the contents height change and apply to the vert space constraint
-    CGRect frame = hText.frame;
-    frame.size.height = hText.contentSize.height;
-    hText.frame = frame;
-    CGSize sizeThatShouldFitTheContent = [hText sizeThatFits: hText.frame.size];
-    hHeightConstraint.constant = sizeThatShouldFitTheContent.height;
-    vertSpace.constant += hHeightConstraint.constant;
+    vertSpace.constant = STATICDATALENGTH;
     
-    frame = cText.frame;
-    frame.size.height = cText.contentSize.height;
-    cText.frame = frame;
-    sizeThatShouldFitTheContent = [cText sizeThatFits: cText.frame.size];
-    cHeightConstraint.constant = sizeThatShouldFitTheContent.height;
-    vertSpace.constant += cHeightConstraint.constant;
-
-    frame = gText.frame;
-    frame.size.height = gText.contentSize.height;
-    gText.frame = frame;
-    sizeThatShouldFitTheContent = [gText sizeThatFits: gText.frame.size];
-    gHeightConstraint.constant = sizeThatShouldFitTheContent.height;
-    vertSpace.constant += gHeightConstraint.constant;
+    [self adjustHeightConstr: vertSpace byView: hText withHeightConstraint:hHeightConstraint];
+    [self adjustHeightConstr: vertSpace byView: cText withHeightConstraint:cHeightConstraint];
+    [self adjustHeightConstr: vertSpace byView: gText withHeightConstraint:gHeightConstraint];
     
-    vertSpace.constant += 3 * [UIScreen mainScreen].bounds.size.width;
+    vertSpace.constant += [UIScreen mainScreen].bounds.size.width * NUMPICS;
     [scroll setContentOffset:CGPointZero];
     [super viewWillAppear:animated];
 }
 
+-(void)adjustHeightConstr:(NSLayoutConstraint*) vSpace byView:(UITextView*) view withHeightConstraint:(NSLayoutConstraint*) constr{
+    
+    CGRect frame;
+    CGSize sizeThatShouldFitTheContent;
+    
+    frame = view.frame;
+    frame.size.height = view.contentSize.height;
+    view.frame = frame;
+    sizeThatShouldFitTheContent = [view sizeThatFits: view.frame.size];
+    
+    constr.constant = sizeThatShouldFitTheContent.height;
+    vSpace.constant += constr.constant;
+}
 @end

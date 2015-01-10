@@ -13,6 +13,7 @@
 @interface MusicTableViewController : UITableViewController {
     AVAudioPlayer *audioPlayer;
     NSArray *songs;
+    NSInteger currentlyPlaying;
     NSTimer *timer;
     IBOutlet UITableView *tableView;
     __weak IBOutlet UIProgressView *p0;

@@ -10,16 +10,15 @@
 #import <UIKit/UIView.h>
 
 @interface MusicTableViewController ()
-
 @end
 
 @implementation MusicTableViewController
 
-NSInteger currentlyPlaying = -1;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a"];
+    currentlyPlaying = -1;
+    audioPlayer.numberOfLoops = -1;
     self.tableView.rowHeight = 44;
 }
 
@@ -30,7 +29,6 @@ NSInteger currentlyPlaying = -1;
     NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:songs[row], [[NSBundle mainBundle] resourcePath]]];
     NSError *error;
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    audioPlayer.numberOfLoops = 1;
     
     if(currentlyPlaying == row){
         [audioPlayer stop];
@@ -54,7 +52,6 @@ NSInteger currentlyPlaying = -1;
     NSTimeInterval playTime = [self->audioPlayer currentTime];
     NSTimeInterval duration = [self->audioPlayer duration];
     float progress = playTime/duration;
-    if(progress >= 1.0) [audioPlayer stop];
     [self updateProgressInd:currentlyPlaying toProg:progress];
 }
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define ROTATIONINTERVALTIME 5.0;
+
 @interface HomeViewController : UIViewController {
     __weak IBOutlet UIImageView *imageView;
 }

@@ -9,26 +9,23 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
-
 @end
 
 @implementation HomeViewController
 
-
-
 - (void)viewDidLoad {
     
-    imageView.animationImages=[NSArray arrayWithObjects:
-                                            [UIImage imageNamed:@"home1"],
-                                            [UIImage imageNamed:@"home2"],
-                                            [UIImage imageNamed:@"home3"],
-                                            [UIImage imageNamed:@"home4"],
-                                            [UIImage imageNamed:@"home5"],
-                                            [UIImage imageNamed:@"home6"],
-                                            [UIImage imageNamed:@"home7"], nil];
+    imageView.animationImages = [NSArray arrayWithObjects:
+                                [UIImage imageNamed:@"home1"],
+                                [UIImage imageNamed:@"home2"],
+                                [UIImage imageNamed:@"home3"],
+                                [UIImage imageNamed:@"home4"],
+                                [UIImage imageNamed:@"home5"],
+                                [UIImage imageNamed:@"home6"],
+                                [UIImage imageNamed:@"home7"], nil];
     
-    imageView.animationDuration= [imageView.animationImages count] * 5.0;
-    imageView.animationRepeatCount=0;
+    imageView.animationDuration = [imageView.animationImages count] * ROTATIONINTERVALTIME;
+    imageView.animationRepeatCount = 0;
     [imageView startAnimating];
     [self.view addSubview:imageView];
 

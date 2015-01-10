@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -33,13 +33,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="emc-U4-I7i">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emc-U4-I7i">
                                 <rect key="frame" x="0.0" y="403" width="600" height="148"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="hse-bG-4U9"/>
                                 </constraints>
-                                <string key="text">At a young age, three boys from different countries started getting into music. Then one day those three boys were banished to South Dakota. There the united to create the sound of the EL DINGOS.</string>
+                                <string key="text">At a young age, three boys from different countries started getting into music. Then one day those three boys were banished to South Dakota. There they united to create the sound of the EL DINGOS.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4170" y="-437"/>
+            <point key="canvasLocation" x="-4537" y="-676"/>
         </scene>
         <!--Music-->
         <scene sceneID="ur4-mh-LTr">
@@ -270,7 +270,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93q-Fj-1Lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3485" y="-381"/>
+            <point key="canvasLocation" x="-3908" y="-424"/>
         </scene>
         <!--Bios-->
         <scene sceneID="DrF-Ia-SvN">
@@ -288,6 +288,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="1451"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxG-dS-0aD">
+                                        <rect key="frame" x="0.0" y="0.0" width="800" height="1"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hunter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iV-b1-dEm">
                                                 <rect key="frame" x="15" y="48" width="52" height="21"/>
@@ -302,70 +303,73 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWC-gr-tva">
+                                                <rect key="frame" x="4" y="83" width="792" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" id="Czs-A5-rz5"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Czs-A5-rz5"/>
                                                 </constraints>
-                                                <string key="text">After being banished to South Dakota the young man determined to make a name for himself. He hogged the mic at the local pub's karaoke nights enough times that he was offered a record deal at age 17. Signing with the rest of the dingos changed him as he was no longer limted to drinking apple juice at the beaten up old pub after work every day. He now enjoys only the finest fruit ciders at any restraunt within walking distance of his choosing, never leaving the house without a secondary jacket to warm the area around his neck.</string>
+                                                <mutableString key="text">After being banished to South Dakota the young man determined to make a name for himself. He hogged the mic at the local pub's karaoke nights enough times that he was offered a record deal at age 17. Signing with the rest of the dingos changed him as he was no longer limted to drinking apple juice at the beaten up old pub after work every day. He now enjoys only the finest fruit ciders at any restaurant within walking distance of his choosing, never leaving the house without a secondary jacket to warm the area around his neck.</mutableString>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="hbio" translatesAutoresizingMaskIntoConstraints="NO" id="HWs-WF-ce2">
-                                                <rect key="frame" x="8" y="107" width="784" height="784"/>
+                                                <rect key="frame" x="8" y="207" width="784" height="784"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HWs-WF-ce2" secondAttribute="height" multiplier="1:1" id="TPf-bo-4nm"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cade " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhJ-vj-Ctz">
-                                                <rect key="frame" x="15" y="939" width="46" height="21"/>
+                                                <rect key="frame" x="15" y="1039" width="46" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beat Machine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jr-GQ-ZIM">
-                                                <rect key="frame" x="76" y="941" width="89" height="17"/>
+                                                <rect key="frame" x="76" y="1041" width="89" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3v-z9-10k">
+                                                <rect key="frame" x="4" y="1074" width="792" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" id="pzP-n3-jVJ"/>
+                                                    <constraint firstAttribute="height" constant="100" id="pzP-n3-jVJ"/>
                                                 </constraints>
                                                 <string key="text">Growing up in communism this dingo sniffed oppurtunity in the states. He started a company that IPO'd within his first year of exile. Merging with El Dingos was a no-brainer for the young entrepreneur. Making more than he can spend has him guarding his plate from anything but the juiciest steaks, leaving bruised and stabbed fruit as a warning for any other food not fit for a dingo.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="cbio" translatesAutoresizingMaskIntoConstraints="NO" id="ZbH-Qz-mJb">
-                                                <rect key="frame" x="8" y="998" width="784" height="784"/>
+                                                <rect key="frame" x="8" y="1198" width="784" height="784"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZbH-Qz-mJb" secondAttribute="height" multiplier="1:1" id="PAJ-h4-e2Z"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garrison" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FZ-s5-Ov8">
-                                                <rect key="frame" x="15" y="1830" width="66" height="21"/>
+                                                <rect key="frame" x="15" y="2030" width="66" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guitar/ Backing Harmonies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH3-gx-Xx1">
-                                                <rect key="frame" x="96" y="1832" width="174" height="17"/>
+                                                <rect key="frame" x="96" y="2032" width="174" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-h0-j9q">
+                                                <rect key="frame" x="4" y="2065" width="792" height="100"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" id="QI9-CM-W89"/>
+                                                    <constraint firstAttribute="height" constant="100" id="QI9-CM-W89"/>
                                                 </constraints>
-                                                <string key="text">Being banished was a favor for the young pup. He'd always dreamt of the hollywood life America had to offer. This dingo is so hot that after just a week of joining the band more than a hundred girls funded a kickstarter to pay someone to follow him and keep the temperature at a cool seventy degrees. Being the ladies man does have its burdens, like having to choose which girls get in the shows. </string>
+                                                <string key="text">Being banished was a favor for the young pup. He'd always dreamt of the hollywood life America had to offer. This dingo is so hot that after just a week of joining the band more than a hundred girls funded a kickstarter to pay someone to follow him and keep the temperature at a cool seventy degrees. Being the ladies man does have its burdens, like having to choose which girls get tickets to the shows. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="gbio" translatesAutoresizingMaskIntoConstraints="NO" id="Zda-xf-HYR">
-                                                <rect key="frame" x="8" y="1889" width="430" height="430"/>
+                                                <rect key="frame" x="8" y="2189" width="430" height="430"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Zda-xf-HYR" secondAttribute="height" multiplier="1:1" id="iE4-ck-4q5"/>
                                                 </constraints>
@@ -387,7 +391,6 @@
                                             <constraint firstAttribute="width" secondItem="Q3v-z9-10k" secondAttribute="width" constant="8" id="NMJ-EB-aL7"/>
                                             <constraint firstItem="HWs-WF-ce2" firstAttribute="leading" secondItem="rxG-dS-0aD" secondAttribute="leading" constant="8" id="OXH-Dy-GpK"/>
                                             <constraint firstItem="ZbH-Qz-mJb" firstAttribute="leading" secondItem="rxG-dS-0aD" secondAttribute="leading" constant="8" id="PCB-ES-VDc"/>
-                                            <constraint firstAttribute="height" id="QSd-Fx-lCc"/>
                                             <constraint firstItem="2Hs-Gc-TXq" firstAttribute="leading" secondItem="7iV-b1-dEm" secondAttribute="trailing" constant="15" id="U06-Rx-Ghe"/>
                                             <constraint firstItem="Ej5-h0-j9q" firstAttribute="top" secondItem="1FZ-s5-Ov8" secondAttribute="bottom" constant="14" id="Wef-dP-Hxm"/>
                                             <constraint firstItem="HWs-WF-ce2" firstAttribute="top" secondItem="TWC-gr-tva" secondAttribute="bottom" constant="24" id="Z3Z-3t-CSy"/>
@@ -396,6 +399,7 @@
                                             <constraint firstItem="Q3v-z9-10k" firstAttribute="top" secondItem="dhJ-vj-Ctz" secondAttribute="bottom" constant="14" id="dqW-pB-fIQ"/>
                                             <constraint firstItem="7iV-b1-dEm" firstAttribute="leading" secondItem="rxG-dS-0aD" secondAttribute="leading" constant="15" id="jtL-Ci-ChO"/>
                                             <constraint firstItem="7iV-b1-dEm" firstAttribute="top" secondItem="rxG-dS-0aD" secondAttribute="top" constant="48" id="nyF-hp-sL6"/>
+                                            <constraint firstAttribute="height" constant="1" id="oLD-kk-Lar"/>
                                             <constraint firstItem="Zda-xf-HYR" firstAttribute="top" secondItem="Ej5-h0-j9q" secondAttribute="bottom" constant="24" id="pRM-7w-Yzp"/>
                                             <constraint firstItem="Zda-xf-HYR" firstAttribute="leading" secondItem="rxG-dS-0aD" secondAttribute="leading" constant="8" id="qjD-9h-X1o"/>
                                             <constraint firstItem="9Jr-GQ-ZIM" firstAttribute="centerY" secondItem="dhJ-vj-Ctz" secondAttribute="centerY" id="r4d-2j-abg"/>
@@ -425,7 +429,6 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="TI5-p5-KdV" secondAttribute="centerX" id="DLz-xa-FSn"/>
                             <constraint firstItem="TI5-p5-KdV" firstAttribute="height" secondItem="wDU-7v-iyk" secondAttribute="height" constant="-49" id="M5I-zG-Te1"/>
-                            <constraint firstAttribute="centerY" secondItem="TI5-p5-KdV" secondAttribute="centerY" constant="24.5" id="cpe-Pa-O5s"/>
                             <constraint firstItem="Fkw-G3-QgB" firstAttribute="top" secondItem="TI5-p5-KdV" secondAttribute="bottom" id="dLp-OV-bJn"/>
                             <constraint firstItem="TI5-p5-KdV" firstAttribute="width" secondItem="wDU-7v-iyk" secondAttribute="width" id="z83-hZ-5Pc"/>
                         </constraints>
@@ -447,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6c-U5-DSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2720" y="-1050"/>
+            <point key="canvasLocation" x="-3192" y="-1061"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -467,7 +470,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3553" y="-1136"/>
+            <point key="canvasLocation" x="-3927" y="-1442"/>
         </scene>
     </scenes>
     <resources>
