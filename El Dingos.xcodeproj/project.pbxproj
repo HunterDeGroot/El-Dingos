@@ -22,6 +22,9 @@
 		908B60A01A58F25B00F98CD0 /* nalr.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 908B609B1A58F25B00F98CD0 /* nalr.m4a */; };
 		908B60A11A58F25B00F98CD0 /* tt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 908B609C1A58F25B00F98CD0 /* tt.m4a */; };
 		908B60A31A58FBBE00F98CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908B60A21A58FBBE00F98CD0 /* Images.xcassets */; };
+		908BE4CB1B83B9350052B1D3 /* dt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 908BE4C81B83B9350052B1D3 /* dt.m4a */; };
+		908BE4CC1B83B9350052B1D3 /* jp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 908BE4C91B83B9350052B1D3 /* jp.m4a */; };
+		908BE4CD1B83B9350052B1D3 /* k.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 908BE4CA1B83B9350052B1D3 /* k.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		908B609B1A58F25B00F98CD0 /* nalr.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nalr.m4a; path = Music/nalr.m4a; sourceTree = "<group>"; };
 		908B609C1A58F25B00F98CD0 /* tt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = tt.m4a; path = Music/tt.m4a; sourceTree = "<group>"; };
 		908B60A21A58FBBE00F98CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		908BE4C81B83B9350052B1D3 /* dt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = dt.m4a; path = Music/dt.m4a; sourceTree = "<group>"; };
+		908BE4C91B83B9350052B1D3 /* jp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = jp.m4a; path = Music/jp.m4a; sourceTree = "<group>"; };
+		908BE4CA1B83B9350052B1D3 /* k.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = k.m4a; path = Music/k.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 		9054ECD31A4524AC004F83DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				908BE4C81B83B9350052B1D3 /* dt.m4a */,
+				908BE4C91B83B9350052B1D3 /* jp.m4a */,
+				908BE4CA1B83B9350052B1D3 /* k.m4a */,
 				908B60981A58F25B00F98CD0 /* chft.m4a */,
 				908B60991A58F25B00F98CD0 /* jsf.m4a */,
 				908B609A1A58F25B00F98CD0 /* mrv.m4a */,
@@ -199,6 +208,9 @@
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = J7HYSXY656;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InterAppAudio = {
 								enabled = 0;
 							};
@@ -234,8 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908BE4CD1B83B9350052B1D3 /* k.m4a in Resources */,
+				908BE4CC1B83B9350052B1D3 /* jp.m4a in Resources */,
 				908B60A31A58FBBE00F98CD0 /* Images.xcassets in Resources */,
 				908B60A11A58F25B00F98CD0 /* tt.m4a in Resources */,
+				908BE4CB1B83B9350052B1D3 /* dt.m4a in Resources */,
 				908B609D1A58F25B00F98CD0 /* chft.m4a in Resources */,
 				908B60A01A58F25B00F98CD0 /* nalr.m4a in Resources */,
 				9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */,
@@ -388,6 +403,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "El Dingos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -402,6 +418,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "El Dingos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

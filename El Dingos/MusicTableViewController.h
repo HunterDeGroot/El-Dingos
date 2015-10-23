@@ -21,6 +21,9 @@
     __weak IBOutlet UIProgressView *p2;
     __weak IBOutlet UIProgressView *p3;
     __weak IBOutlet UIProgressView *p4;
+    __weak IBOutlet UIProgressView *p5;
+    __weak IBOutlet UIProgressView *p6;
+    __weak IBOutlet UIProgressView *p7;
 }
 
 - (void) updateProgressInd:(NSInteger)ind toProg:(float) prog;

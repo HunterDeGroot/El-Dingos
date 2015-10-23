@@ -16,10 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a"];
+    songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a", @"%@/k.m4a",
+              @"%@/jp.m4a", @"%@/dt.m4a"];
     currentlyPlaying = -1;
     audioPlayer.numberOfLoops = -1;
     self.tableView.rowHeight = 44;
+    
+    AudioSessionInitialize(NULL, kCFRunLoopDefaultMode, audioPlayer.play, (__bridge void *)(self));
+    
+    UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+    AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(sessionCategory), &sessionCategory);
+    
+    AudioSessionSetActive(true);
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -76,6 +85,18 @@
             
         case 4:
             p4.progress = prog;
+            break;
+            
+        case 5:
+            p5.progress = prog;
+            break;
+            
+        case 6:
+            p6.progress = prog;
+            break;
+            
+        case 7:
+            p7.progress = prog;
             break;
             
         default:
