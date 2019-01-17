@@ -39,14 +39,16 @@
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     [timer fire];
     [super viewDidLoad];
+    
+
 }
 
 -(void)onTimer{
     [UIView animateWithDuration:5.0 animations:^{
-        imageView.alpha = 0.0;
+        self->imageView.alpha = 0.0;
     }];
     [UIView animateWithDuration:1.0 animations:^{
-        imageView.alpha = 1.0;
+        self->imageView.alpha = 1.0;
     }];
 }
 
