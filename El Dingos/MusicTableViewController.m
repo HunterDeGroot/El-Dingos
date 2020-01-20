@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a"];
+    songs = @[@"%@/tt.m4a", @"%@/mrv.m4a", @"%@/chft.m4a", @"%@/nalr.m4a", @"%@/jsf.m4a", @"%@/kreemb.mp3", @"%@/jpj.mp3", @"%@/dt.mp3"];
     currentlyPlaying = -1;
     audioPlayer.numberOfLoops = -1;
     self.tableView.rowHeight = 44;
@@ -76,6 +76,18 @@
             
         case 4:
             p4.progress = prog;
+            break;
+            
+        case 5:
+            p5.progress = prog;
+            break;
+        
+        case 6:
+            p6.progress = prog;
+            break;
+        
+        case 7:
+            p7.progress = prog;
             break;
             
         default:

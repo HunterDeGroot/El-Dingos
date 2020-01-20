@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5AD53823D632AE0081D066 /* dt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53523D632AD0081D066 /* dt.mp3 */; };
+		5A5AD53923D632AE0081D066 /* kreemb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53623D632AD0081D066 /* kreemb.mp3 */; };
+		5A5AD53A23D632AE0081D066 /* jpj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53723D632AD0081D066 /* jpj.mp3 */; };
 		901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901D4FD01A5620CB00FC54F3 /* Main.storyboard */; };
 		9021A4BE1A468C42008E2C76 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4BD1A468C42008E2C76 /* HomeViewController.m */; };
 		9021A4C11A468C5D008E2C76 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4C01A468C5D008E2C76 /* MusicTableViewController.m */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A5AD53523D632AD0081D066 /* dt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dt.mp3; path = ../../../dt.mp3; sourceTree = "<group>"; };
+		5A5AD53623D632AD0081D066 /* kreemb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kreemb.mp3; path = ../../../kreemb.mp3; sourceTree = "<group>"; };
+		5A5AD53723D632AD0081D066 /* jpj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jpj.mp3; path = ../../../jpj.mp3; sourceTree = "<group>"; };
 		901D4FD11A5620CB00FC54F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9021A4BC1A468C42008E2C76 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9021A4BD1A468C42008E2C76 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 		9054ECD31A4524AC004F83DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A5AD53523D632AD0081D066 /* dt.mp3 */,
+				5A5AD53723D632AD0081D066 /* jpj.mp3 */,
+				5A5AD53623D632AD0081D066 /* kreemb.mp3 */,
 				908B60981A58F25B00F98CD0 /* chft.m4a */,
 				908B60991A58F25B00F98CD0 /* jsf.m4a */,
 				908B609A1A58F25B00F98CD0 /* mrv.m4a */,
@@ -215,7 +224,7 @@
 			};
 			buildConfigurationList = 9054ECCB1A4524AC004F83DD /* Build configuration list for PBXProject "El Dingos" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -241,8 +250,11 @@
 				908B60A11A58F25B00F98CD0 /* tt.m4a in Resources */,
 				908B609D1A58F25B00F98CD0 /* chft.m4a in Resources */,
 				908B60A01A58F25B00F98CD0 /* nalr.m4a in Resources */,
+				5A5AD53923D632AE0081D066 /* kreemb.mp3 in Resources */,
 				9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */,
 				908B609E1A58F25B00F98CD0 /* jsf.m4a in Resources */,
+				5A5AD53A23D632AE0081D066 /* jpj.mp3 in Resources */,
+				5A5AD53823D632AE0081D066 /* dt.mp3 in Resources */,
 				908B609F1A58F25B00F98CD0 /* mrv.m4a in Resources */,
 				901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */,
 			);

@@ -16,13 +16,13 @@
 - (void)viewDidLoad {
     
     imageView.animationImages = [NSArray arrayWithObjects:
-                                [UIImage imageNamed:@"home1"],
-                                [UIImage imageNamed:@"home2"],
-                                [UIImage imageNamed:@"home3"],
-                                [UIImage imageNamed:@"home4"],
-                                [UIImage imageNamed:@"home5"],
-                                [UIImage imageNamed:@"home6"],
-                                [UIImage imageNamed:@"home7"], nil];
+                                [UIImage imageNamed:@"Home1"],
+                                [UIImage imageNamed:@"Home2"],
+                                [UIImage imageNamed:@"Home3"],
+                                [UIImage imageNamed:@"Home4"],
+                                [UIImage imageNamed:@"Home5"],
+                                [UIImage imageNamed:@"Home6"],
+                                [UIImage imageNamed:@"Home7"], nil];
     
     imageView.animationDuration = [imageView.animationImages count] * ROTATIONINTERVALTIME;
     imageView.animationRepeatCount = 0;
