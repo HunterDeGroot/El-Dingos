@@ -30,6 +30,7 @@
     [self.view addSubview:imageView];
 
     float interval = imageView.animationDuration/ [imageView.animationImages count];
+
     NSTimer *timer = [NSTimer   timerWithTimeInterval: interval
                                 target:self
                                 selector:@selector(onTimer)
