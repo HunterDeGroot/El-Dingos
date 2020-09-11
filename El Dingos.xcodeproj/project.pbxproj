@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A5AD53823D632AE0081D066 /* dt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53523D632AD0081D066 /* dt.mp3 */; };
-		5A5AD53923D632AE0081D066 /* kreemb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53623D632AD0081D066 /* kreemb.mp3 */; };
-		5A5AD53A23D632AE0081D066 /* jpj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AD53723D632AD0081D066 /* jpj.mp3 */; };
+		40C429E1250C242D00566158 /* kreemb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40C429DE250C242C00566158 /* kreemb.mp3 */; };
+		40C429E2250C242D00566158 /* dt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40C429DF250C242C00566158 /* dt.mp3 */; };
+		40C429E3250C242D00566158 /* jpj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40C429E0250C242C00566158 /* jpj.mp3 */; };
 		901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901D4FD01A5620CB00FC54F3 /* Main.storyboard */; };
 		9021A4BE1A468C42008E2C76 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4BD1A468C42008E2C76 /* HomeViewController.m */; };
 		9021A4C11A468C5D008E2C76 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9021A4C01A468C5D008E2C76 /* MusicTableViewController.m */; };
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A5AD53523D632AD0081D066 /* dt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dt.mp3; path = ../../../dt.mp3; sourceTree = "<group>"; };
-		5A5AD53623D632AD0081D066 /* kreemb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kreemb.mp3; path = ../../../kreemb.mp3; sourceTree = "<group>"; };
-		5A5AD53723D632AD0081D066 /* jpj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jpj.mp3; path = ../../../jpj.mp3; sourceTree = "<group>"; };
+		40C429DE250C242C00566158 /* kreemb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kreemb.mp3; path = Music/kreemb.mp3; sourceTree = "<group>"; };
+		40C429DF250C242C00566158 /* dt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dt.mp3; path = Music/dt.mp3; sourceTree = "<group>"; };
+		40C429E0250C242C00566158 /* jpj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jpj.mp3; path = Music/jpj.mp3; sourceTree = "<group>"; };
 		901D4FD11A5620CB00FC54F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9021A4BC1A468C42008E2C76 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9021A4BD1A468C42008E2C76 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		908B609A1A58F25B00F98CD0 /* mrv.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = mrv.m4a; path = Music/mrv.m4a; sourceTree = "<group>"; };
 		908B609B1A58F25B00F98CD0 /* nalr.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nalr.m4a; path = Music/nalr.m4a; sourceTree = "<group>"; };
 		908B609C1A58F25B00F98CD0 /* tt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = tt.m4a; path = Music/tt.m4a; sourceTree = "<group>"; };
-		908B60A21A58FBBE00F98CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		908B60A21A58FBBE00F98CD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "El Dingos/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +126,9 @@
 		9054ECD31A4524AC004F83DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A5AD53523D632AD0081D066 /* dt.mp3 */,
-				5A5AD53723D632AD0081D066 /* jpj.mp3 */,
-				5A5AD53623D632AD0081D066 /* kreemb.mp3 */,
+				40C429E0250C242C00566158 /* jpj.mp3 */,
+				40C429DE250C242C00566158 /* kreemb.mp3 */,
+				40C429DF250C242C00566158 /* dt.mp3 */,
 				908B60981A58F25B00F98CD0 /* chft.m4a */,
 				908B60991A58F25B00F98CD0 /* jsf.m4a */,
 				908B609A1A58F25B00F98CD0 /* mrv.m4a */,
@@ -246,15 +246,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C429E2250C242D00566158 /* dt.mp3 in Resources */,
 				908B60A31A58FBBE00F98CD0 /* Images.xcassets in Resources */,
 				908B60A11A58F25B00F98CD0 /* tt.m4a in Resources */,
+				40C429E1250C242D00566158 /* kreemb.mp3 in Resources */,
 				908B609D1A58F25B00F98CD0 /* chft.m4a in Resources */,
 				908B60A01A58F25B00F98CD0 /* nalr.m4a in Resources */,
-				5A5AD53923D632AE0081D066 /* kreemb.mp3 in Resources */,
 				9054ECE71A4524AC004F83DD /* LaunchScreen.xib in Resources */,
 				908B609E1A58F25B00F98CD0 /* jsf.m4a in Resources */,
-				5A5AD53A23D632AE0081D066 /* jpj.mp3 in Resources */,
-				5A5AD53823D632AE0081D066 /* dt.mp3 in Resources */,
+				40C429E3250C242D00566158 /* jpj.mp3 in Resources */,
 				908B609F1A58F25B00F98CD0 /* mrv.m4a in Resources */,
 				901D4FD21A5620CB00FC54F3 /* Main.storyboard in Resources */,
 			);
@@ -425,11 +425,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.9;
+				CURRENT_PROJECT_VERSION = 1.13;
 				DEVELOPMENT_TEAM = J7HYSXY656;
 				INFOPLIST_FILE = "El Dingos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "COM.HD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -443,11 +443,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1.9;
+				CURRENT_PROJECT_VERSION = 1.13;
 				DEVELOPMENT_TEAM = J7HYSXY656;
 				INFOPLIST_FILE = "El Dingos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "COM.HD.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

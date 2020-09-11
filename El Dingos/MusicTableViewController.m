@@ -37,6 +37,9 @@
         currentlyPlaying = -1;
     }
     else {
+        [[AVAudioSession sharedInstance]
+        setCategory: AVAudioSessionCategoryPlayback
+              error: nil];
         [audioPlayer play];
         [self play:nil];
         [self updateProgressInd:currentlyPlaying toProg:0.01];
